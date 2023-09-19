@@ -47,8 +47,6 @@ resource "aws_instance" "tf_instance" {
   instance_type = "t2.micro"
   subnet_id     = "subnet-02170bfea3f035bab"
   user_data     = filebase64("./provisioning.sh")
-
-  # Посилання на вашу створену сек'юріті групу nginx-sg
   vpc_security_group_ids = [aws_security_group.nginx-sg.id]
 }
 
