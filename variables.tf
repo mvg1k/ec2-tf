@@ -1,19 +1,19 @@
 variable "access_key" {
   description = "access key"
   type        = string
-  default     = "AKIAQYP2UC7ITG2EWXHW"
+  default     = "XXXXX"
 }
 
 variable "secret_key" {
   description = "secret key"
   type        = string
-  default     = "N2THVV6/xLvX3tx2OYqwp0z+U30E7zzeGHMU1o2e"
+  default     = "XXXXX"
 }
 
 variable "instance_type" {
   description = "The type of EC2 instance"
   type        = string
-  default     = "t2.micro"  # type of your instance
+  default     = "t2.micro"  
 }
 
 variable "ami" {
