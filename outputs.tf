@@ -1,4 +1,3 @@
-output "instance_ip" {
-  value = aws_instance.tf_instance.public_ip
-  description = "Public ip of created instance"
+output "aws_account_name" {
+  value = var.aws_account_name
 }

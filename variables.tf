@@ -1,27 +1,8 @@
-variable "access_key" {
-  description = "access key"
+variable "s_name" {
   type        = string
-  default     = "XXXXX"
+  default     = "my-test-secret1"
 }
-
-variable "secret_key" {
-  description = "secret key"
+variable "aws_account_name"{
   type        = string
-  default     = "XXXXX"
-}
-
-variable "instance_type" {
-  description = "The type of EC2 instance"
-  type        = string
-  default     = "t2.micro"  
-}
-
-variable "ami" {
-  type        = string
-  default     = "ami-04cb4ca688797756f"
-}
-
-variable "subnet_id" {
-  type        = string
-  default     = "subnet-02170bfea3f035bab"
+  default     = "admin"
 }
