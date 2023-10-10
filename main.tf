@@ -1,12 +1,12 @@
 provider "aws" {
-  region     = "us-east-1"
+  region     = var.region
 }
 
 terraform {
   backend "s3" {
     bucket         = "tf-remotestate-mvgik-s3"
     key            = "terraform.tfstate"
-    region         = "us-east-1"
+    region         = var.region
     dynamodb_table = "tf-rs-dynamo"
   }
 }
