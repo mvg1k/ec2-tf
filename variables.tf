@@ -1,7 +1,4 @@
-variable "s_name" {
-  type        = string
-  default     = "my-test-secret"
-}
+
 variable "aws_account_name"{
   type        = string
   default     = "admin"
@@ -9,4 +6,22 @@ variable "aws_account_name"{
 variable "region"{
   type        = string
   default     = "us-east-1"
+<<<<<<< HEAD
+}
+variable "ami_id"{
+  type        = string
+  default     ="ami-01eccbf80522b562b"
+}
+variable "type" {
+  type        = string
+  default     = "t2.micro"
+}
+variable "subnet_id" {
+  type        = string
+  default     = "subnet-02170bfea3f035bab"
+}
+
+variable "vpc_id" {
+  type        = string
+  default     = "vpc-00c0c735b7100d454"
 }
