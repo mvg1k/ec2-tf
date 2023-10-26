@@ -6,7 +6,6 @@ variable "aws_account_name"{
 variable "region"{
   type        = string
   default     = "us-east-1"
-<<<<<<< HEAD
 }
 variable "ami_id"{
   type        = string
