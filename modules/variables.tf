@@ -1,12 +1,4 @@
 
-variable "aws_account_name"{
-  type        = string
-  default     = "admin"
-}
-variable "region"{
-  type        = string
-  default     = "us-east-1"
-}
 variable "ami_id"{
   type        = string
   default     ="ami-01eccbf80522b562b"
