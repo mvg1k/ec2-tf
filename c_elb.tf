@@ -2,7 +2,7 @@
 resource "aws_elb" "secret_classic_elb" {
   name               = "secret-classic-elb"
   subnets            = [var.subnet_id]
-  security_groups = [aws_security_group.secret_elb_sg.id]
+  security_groups = [module.sg_n_instance.security_group_id_output]
   listener {
     instance_port     = 80
     instance_protocol = "http"
@@ -18,7 +18,7 @@ resource "aws_elb" "secret_classic_elb" {
     interval            = 30
   }
 
-  instances                   = [aws_instance.secret_elb_instance.id]
+  instances                   = [module.sg_n_instance.instance_id_output]
   cross_zone_load_balancing   = true
   idle_timeout                = 400
   connection_draining         = true

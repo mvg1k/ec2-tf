@@ -16,3 +16,8 @@ variable "vpc_id" {
   type        = string
   default     = "vpc-00c0c735b7100d454"
 }
+
+variable "instance_profile_name" {
+  description = "Name of the IAM instance profile"
+  type        = string
+}

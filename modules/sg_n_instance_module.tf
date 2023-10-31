@@ -1,3 +1,5 @@
+
+
 #SECURITY GROUP
 resource "aws_security_group" "secret_elb_sg" {
   name        = "secret_elb_sg"
@@ -31,6 +33,6 @@ resource "aws_instance" "secret_elb_instance" {
   instance_type = var.type
   subnet_id     = var.subnet_id
   vpc_security_group_ids = [aws_security_group.secret_elb_sg.id]
-  user_data = filebase64("./provisioning.sh")
-  iam_instance_profile = aws_iam_instance_profile.secret_elb_profile.name
+  user_data = filebase64("./modules/provisioning.sh")
+  iam_instance_profile = var.instance_profile_name
 }
