@@ -1,4 +1,4 @@
-#CLASSIC ELB
+#CLASSIC ELB_test
 resource "aws_elb" "secret_classic_elb" {
   name               = "secret-classic-elb"
   subnets            = [var.subnet_id]
