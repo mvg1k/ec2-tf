@@ -7,20 +7,25 @@ variable "region"{
   type        = string
   default     = "us-east-1"
 }
-variable "ami_id"{
-  type        = string
-  default     ="ami-01eccbf80522b562b"
-}
 variable "type" {
   type        = string
-  default     = "t2.micro"
+  default     = "db.t2.micro"
 }
-variable "subnet_id" {
+variable "pub_subnet_a_id" {
   type        = string
-  default     = "subnet-02170bfea3f035bab"
+  default     = "subnet-09b927761e699edf7"
+}
+
+variable "pub_subnet_b_id" {
+  type        = string
+  default     = "subnet-0649bc848358c2b12"
 }
 
 variable "vpc_id" {
   type        = string
-  default     = "vpc-00c0c735b7100d454"
+  default     = "vpc-049a70758b23c6260"
+}
+variable "security_group_id" {
+  type        = string
+  default     = "sg-082ba26dacb154a4c"
 }
