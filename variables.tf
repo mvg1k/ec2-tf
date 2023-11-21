@@ -29,3 +29,7 @@ variable "security_group_id" {
   type        = string
   default     = "sg-082ba26dacb154a4c"
 }
+variable "launch_template_id"{
+  type        = string
+  default     = "lt-06d81a71dcd0862e4"
+}
